@@ -13,6 +13,7 @@
 		04E096BD224854A000BEBFE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04E096BC224854A000BEBFE6 /* Assets.xcassets */; };
 		04E096C0224854A000BEBFE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E096BE224854A000BEBFE6 /* LaunchScreen.storyboard */; };
 		04E096C82248567E00BEBFE6 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E096C72248567E00BEBFE6 /* DetailViewController.swift */; };
+		04E096CA22485FCF00BEBFE6 /* ItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E096C922485FCE00BEBFE6 /* ItemTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		04E096BF224854A000BEBFE6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04E096C1224854A000BEBFE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04E096C72248567E00BEBFE6 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		04E096C922485FCE00BEBFE6 /* ItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				04E096BE224854A000BEBFE6 /* LaunchScreen.storyboard */,
 				04E096C1224854A000BEBFE6 /* Info.plist */,
 				04E096C72248567E00BEBFE6 /* DetailViewController.swift */,
+				04E096C922485FCE00BEBFE6 /* ItemTableViewCell.swift */,
 			);
 			path = GameOfThrones;
 			sourceTree = "<group>";
@@ -138,6 +141,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04E096CA22485FCF00BEBFE6 /* ItemTableViewCell.swift in Sources */,
 				04E096C82248567E00BEBFE6 /* DetailViewController.swift in Sources */,
 				04E096B82248549B00BEBFE6 /* TableViewController.swift in Sources */,
 				04E096B62248549B00BEBFE6 /* AppDelegate.swift in Sources */,
