@@ -108,7 +108,7 @@
                                                     <constraint firstAttribute="height" constant="200" id="xGY-Fh-AY3"/>
                                                 </constraints>
                                             </imageView>
-                                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Mx3-FG-PUJ">
+                                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="Mx3-FG-PUJ">
                                                 <rect key="frame" x="169" y="145.5" width="37" height="37"/>
                                                 <color key="color" red="1" green="0.57810515169999999" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </activityIndicatorView>
@@ -203,6 +203,7 @@
                                             <constraint firstAttribute="trailing" secondItem="qlq-G8-g4D" secondAttribute="trailing" constant="20" id="8uJ-PB-iGf"/>
                                             <constraint firstItem="Mx3-FG-PUJ" firstAttribute="centerX" secondItem="2ht-LW-u7I" secondAttribute="centerX" id="AbW-2p-1bE"/>
                                             <constraint firstItem="QB2-dX-p5o" firstAttribute="leading" secondItem="OhW-kq-T1I" secondAttribute="leading" constant="20" id="BCg-lH-lS1"/>
+                                            <constraint firstItem="32L-UY-azY" firstAttribute="top" secondItem="5xg-NH-3ua" secondAttribute="bottom" constant="20" id="BGR-9P-Erc"/>
                                             <constraint firstItem="qlq-G8-g4D" firstAttribute="top" secondItem="OhW-kq-T1I" secondAttribute="top" constant="20" id="GsZ-jg-7cL"/>
                                             <constraint firstItem="5xg-NH-3ua" firstAttribute="leading" secondItem="OhW-kq-T1I" secondAttribute="leading" constant="20" id="HcQ-P9-SSZ"/>
                                             <constraint firstAttribute="trailing" secondItem="32L-UY-azY" secondAttribute="trailing" constant="20" id="L4l-jC-ART"/>
@@ -212,7 +213,7 @@
                                             <constraint firstItem="32L-UY-azY" firstAttribute="leading" secondItem="OhW-kq-T1I" secondAttribute="leading" constant="20" id="RIs-Jp-5R5"/>
                                             <constraint firstItem="Mx3-FG-PUJ" firstAttribute="centerY" secondItem="2ht-LW-u7I" secondAttribute="centerY" id="d1f-QH-2mJ"/>
                                             <constraint firstItem="2ht-LW-u7I" firstAttribute="top" secondItem="qlq-G8-g4D" secondAttribute="bottom" constant="20" id="iEK-wZ-oI7"/>
-                                            <constraint firstItem="32L-UY-azY" firstAttribute="top" secondItem="5xg-NH-3ua" secondAttribute="bottom" constant="20" id="ljf-aK-Se5"/>
+                                            <constraint firstAttribute="bottom" secondItem="32L-UY-azY" secondAttribute="bottom" constant="216.5" id="o93-Ag-YJA"/>
                                             <constraint firstItem="QB2-dX-p5o" firstAttribute="top" secondItem="2ht-LW-u7I" secondAttribute="bottom" constant="20" id="vIw-uw-O9a"/>
                                             <constraint firstItem="qlq-G8-g4D" firstAttribute="leading" secondItem="OhW-kq-T1I" secondAttribute="leading" constant="20" id="ve3-Od-jAO"/>
                                         </constraints>
@@ -238,9 +239,14 @@
                         <viewLayoutGuide key="safeArea" id="YGn-Xg-IL7"/>
                     </view>
                     <connections>
+                        <outlet property="airDateLabel" destination="khM-EN-MOT" id="GAj-uY-rjr"/>
+                        <outlet property="airTimeLabel" destination="36t-zs-BM1" id="ybP-4y-oer"/>
                         <outlet property="episodeImageView" destination="2ht-LW-u7I" id="Z2I-MA-86Y"/>
+                        <outlet property="episodeLabel" destination="IDd-iE-1zx" id="qcF-An-LvA"/>
                         <outlet property="episodeTitleLabel" destination="qlq-G8-g4D" id="hRK-e7-5gM"/>
                         <outlet property="loadingActivityIndicator" destination="Mx3-FG-PUJ" id="4MH-Pf-hTs"/>
+                        <outlet property="seasonLabel" destination="9XB-hh-0hD" id="vQq-LG-akQ"/>
+                        <outlet property="summaryLabel" destination="32L-UY-azY" id="ZFd-xd-vim"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cuP-CZ-yBM" userLabel="First Responder" sceneMemberID="firstResponder"/>

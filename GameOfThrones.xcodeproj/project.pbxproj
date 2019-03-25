@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0418AA25224930C400A177DB /* Serie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AA24224930C400A177DB /* Serie.swift */; };
+		0418AA272249327700A177DB /* Episode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AA262249327700A177DB /* Episode.swift */; };
+		0418AA2B22493A6D00A177DB /* GOTModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AA2A22493A6D00A177DB /* GOTModel.swift */; };
+		0418AA2E22493AB800A177DB /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AA2D22493AB800A177DB /* NetworkService.swift */; };
+		0418AA302249414C00A177DB /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0418AA2F2249414B00A177DB /* ImageCache.swift */; };
 		04E096B62248549B00BEBFE6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E096B52248549B00BEBFE6 /* AppDelegate.swift */; };
 		04E096B82248549B00BEBFE6 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E096B72248549B00BEBFE6 /* TableViewController.swift */; };
 		04E096BB2248549B00BEBFE6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04E096B92248549B00BEBFE6 /* Main.storyboard */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0418AA24224930C400A177DB /* Serie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Serie.swift; sourceTree = "<group>"; };
+		0418AA262249327700A177DB /* Episode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Episode.swift; sourceTree = "<group>"; };
+		0418AA2A22493A6D00A177DB /* GOTModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOTModel.swift; sourceTree = "<group>"; };
+		0418AA2D22493AB800A177DB /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		0418AA2F2249414B00A177DB /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
 		04E096B22248549B00BEBFE6 /* GameOfThrones.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GameOfThrones.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04E096B52248549B00BEBFE6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04E096B72248549B00BEBFE6 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -39,6 +49,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0418AA2322492F2E00A177DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0418AA24224930C400A177DB /* Serie.swift */,
+				0418AA262249327700A177DB /* Episode.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0418AA2822493A1F00A177DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				04E096B92248549B00BEBFE6 /* Main.storyboard */,
+				04E096B72248549B00BEBFE6 /* TableViewController.swift */,
+				04E096C72248567E00BEBFE6 /* DetailViewController.swift */,
+				04E096C922485FCE00BEBFE6 /* ItemTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0418AA2922493A4D00A177DB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0418AA2A22493A6D00A177DB /* GOTModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0418AA2C22493A8A00A177DB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0418AA2D22493AB800A177DB /* NetworkService.swift */,
+				0418AA2F2249414B00A177DB /* ImageCache.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		04E096A92248549A00BEBFE6 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +105,14 @@
 		04E096B42248549B00BEBFE6 /* GameOfThrones */ = {
 			isa = PBXGroup;
 			children = (
+				0418AA2C22493A8A00A177DB /* Services */,
+				0418AA2922493A4D00A177DB /* ViewModel */,
+				0418AA2822493A1F00A177DB /* View */,
+				0418AA2322492F2E00A177DB /* Model */,
 				04E096B52248549B00BEBFE6 /* AppDelegate.swift */,
-				04E096B72248549B00BEBFE6 /* TableViewController.swift */,
-				04E096B92248549B00BEBFE6 /* Main.storyboard */,
 				04E096BC224854A000BEBFE6 /* Assets.xcassets */,
 				04E096BE224854A000BEBFE6 /* LaunchScreen.storyboard */,
 				04E096C1224854A000BEBFE6 /* Info.plist */,
-				04E096C72248567E00BEBFE6 /* DetailViewController.swift */,
-				04E096C922485FCE00BEBFE6 /* ItemTableViewCell.swift */,
 			);
 			path = GameOfThrones;
 			sourceTree = "<group>";
@@ -141,10 +188,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0418AA2B22493A6D00A177DB /* GOTModel.swift in Sources */,
 				04E096CA22485FCF00BEBFE6 /* ItemTableViewCell.swift in Sources */,
+				0418AA2E22493AB800A177DB /* NetworkService.swift in Sources */,
+				0418AA302249414C00A177DB /* ImageCache.swift in Sources */,
 				04E096C82248567E00BEBFE6 /* DetailViewController.swift in Sources */,
 				04E096B82248549B00BEBFE6 /* TableViewController.swift in Sources */,
+				0418AA272249327700A177DB /* Episode.swift in Sources */,
 				04E096B62248549B00BEBFE6 /* AppDelegate.swift in Sources */,
+				0418AA25224930C400A177DB /* Serie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
